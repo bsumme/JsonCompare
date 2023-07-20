@@ -1,0 +1,12 @@
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net7.0\JsonComparer.deps.json
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net7.0\JsonComparer.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net7.0\JsonComparer.pdb
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.csproj.AssemblyReference.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.AssemblyInfoInputs.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.AssemblyInfo.cs
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.csproj.CoreCompileInputs.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\refint\JsonComparer.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\JsonComparer.pdb
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net7.0\ref\JsonComparer.dll

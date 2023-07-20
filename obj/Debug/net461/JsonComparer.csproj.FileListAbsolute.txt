@@ -1,0 +1,11 @@
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.csproj.AssemblyReference.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.AssemblyInfoInputs.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.AssemblyInfo.cs
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.csproj.CoreCompileInputs.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\JsonComparer.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\JsonComparer.pdb
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\Newtonsoft.Json.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.csproj.CopyComplete
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.pdb

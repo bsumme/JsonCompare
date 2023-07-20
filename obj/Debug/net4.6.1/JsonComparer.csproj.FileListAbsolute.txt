@@ -1,0 +1,5 @@
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net4.6.1\JsonComparer.csproj.AssemblyReference.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net4.6.1\JsonComparer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net4.6.1\JsonComparer.AssemblyInfoInputs.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net4.6.1\JsonComparer.AssemblyInfo.cs
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net4.6.1\JsonComparer.csproj.CoreCompileInputs.cache
