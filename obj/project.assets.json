@@ -29,17 +29,6 @@
       }
     },
     "net6.0-windows7.0": {
-      "Microsoft.Activities.Extensions/2.0.6.9": {
-        "type": "package",
-        "compile": {
-          "lib/Net45/Microsoft.Activities.Extensions.Design.dll": {},
-          "lib/Net45/Microsoft.Activities.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/Net45/Microsoft.Activities.Extensions.Design.dll": {},
-          "lib/Net45/Microsoft.Activities.Extensions.dll": {}
-        }
-      },
       "Microsoft.CodeAnalysis.Analyzers/3.3.2": {
         "type": "package",
         "build": {
@@ -685,28 +674,6 @@
     }
   },
   "libraries": {
-    "Microsoft.Activities.Extensions/2.0.6.9": {
-      "sha512": "yGwK3gYUzzGIzgybBtXsCbcWIj+Dv+gadnaWkmG0WpBs22AV8ZS7deFhAb2pznDoGz0Pj4M7Tt9RwK9VrNzf4A==",
-      "type": "package",
-      "path": "microsoft.activities.extensions/2.0.6.9",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "help/Microsoft.Activities.Extensions Documentation.chm",
-        "lib/Net40/Microsoft.Activities.Extensions.Design.dll",
-        "lib/Net40/Microsoft.Activities.Extensions.dll",
-        "lib/Net401/Microsoft.Activities.Extensions.Design.dll",
-        "lib/Net401/Microsoft.Activities.Extensions.dll",
-        "lib/Net45/Microsoft.Activities.Extensions.Design.dll",
-        "lib/Net45/Microsoft.Activities.Extensions.dll",
-        "microsoft.activities.extensions.2.0.6.9.nupkg.sha512",
-        "microsoft.activities.extensions.nuspec",
-        "tools/Microsoft.Activities.Extensions.NuGet.dll",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
     "Microsoft.CodeAnalysis.Analyzers/3.3.2": {
       "sha512": "7xt6zTlIEizUgEsYAIgm37EbdkiMmr6fP6J9pDoKEpiGM4pi32BCPGr/IczmSJI9Zzp0a6HOzpr9OvpMP+2veA==",
       "type": "package",
@@ -1917,7 +1884,6 @@
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net6.0-windows7.0": [
-      "Microsoft.Activities.Extensions >= 2.0.6.9",
       "Newtonsoft.Json >= 13.0.3",
       "System.ComponentModel.Composition >= 7.0.0",
       "UiPath.Workflow >= 6.0.0-alpha-20220106-04",
@@ -1970,10 +1936,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "Microsoft.Activities.Extensions": {
-            "target": "Package",
-            "version": "[2.0.6.9, )"
-          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
@@ -2040,17 +2002,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.6.23330.14\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Activities.Extensions 2.0.6.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Activities.Extensions",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

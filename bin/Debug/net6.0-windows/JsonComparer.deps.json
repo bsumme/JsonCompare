@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "JsonComparer/1.0.0": {
         "dependencies": {
-          "Microsoft.Activities.Extensions": "2.0.6.9",
           "Newtonsoft.Json": "13.0.3",
           "System.ComponentModel.Composition": "7.0.0",
           "UiPath.Workflow": "6.0.0-alpha-20220106-04",
@@ -16,18 +15,6 @@
         },
         "runtime": {
           "JsonComparer.dll": {}
-        }
-      },
-      "Microsoft.Activities.Extensions/2.0.6.9": {
-        "runtime": {
-          "lib/Net45/Microsoft.Activities.Extensions.Design.dll": {
-            "assemblyVersion": "2.0.6.9",
-            "fileVersion": "2.0.6.9"
-          },
-          "lib/Net45/Microsoft.Activities.Extensions.dll": {
-            "assemblyVersion": "2.0.6.9",
-            "fileVersion": "2.0.6.9"
-          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.2": {},
@@ -504,13 +491,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Microsoft.Activities.Extensions/2.0.6.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yGwK3gYUzzGIzgybBtXsCbcWIj+Dv+gadnaWkmG0WpBs22AV8ZS7deFhAb2pznDoGz0Pj4M7Tt9RwK9VrNzf4A==",
-      "path": "microsoft.activities.extensions/2.0.6.9",
-      "hashPath": "microsoft.activities.extensions.2.0.6.9.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/3.3.2": {
       "type": "package",

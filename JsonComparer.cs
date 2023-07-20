@@ -3,11 +3,12 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Activities;
 using System.ComponentModel;
+
  
 
 [Category("Custom C# Code")]
 [DisplayName("Json Comparer")]
-[Description("Compare Two Json Strings")]
+[Description("Compare Two Json Strings and Return Diff as Json String")]
 public class JsonComparer : CodeActivity
 {
 
@@ -15,19 +16,17 @@ public class JsonComparer : CodeActivity
     [DisplayName("First JsonString")]
     [Description("Enter the first Json String")]
     [RequiredArgument]
-    public InArgument<String?> FirstJsonString { get; set; }
+    public InArgument<String> FirstJsonString { get; set; }
 
     [Category("Input")]
     [DisplayName("Second JsonString")]
     [Description("Enter the Second Json String")]
     [RequiredArgument]
-    public InArgument<String?> SecondJsonString { get; set; }
+    public InArgument<String> SecondJsonString { get; set; }
 
-    public OutArgument<String?> ResultString { get; set; }
+    public OutArgument<String> ResultString { get; set; }
     protected override void Execute(CodeActivityContext context)
         {
-           //String JsonStr1 = "@" + (FirstJsonString.Get(context)).Replace("\"", "\"\"");
-           // String JsonStr2 = "@" + (SecondJsonString.Get(context)).Replace("\"", "\"\"");
             String JsonStr1 = FirstJsonString.Get(context);
             String JsonStr2 = SecondJsonString.Get(context);
             JObject J1 = JObject.Parse(JsonStr1);
@@ -35,7 +34,8 @@ public class JsonComparer : CodeActivity
             JObject J1Leafs = JsonComparer.GetLeafs(J1);
             JObject J2Leafs = JsonComparer.GetLeafs(J2);
             
-            JToken? diffJsonNested = JsonComparer.GetJsonDifference(J1Leafs,  J2Leafs);
+            JToken diffJsonNested = JsonComparer.GetJsonDifference(J1Leafs,  J2Leafs);
+
             ResultString.Set(context, diffJsonNested.ToString());
         }
     
@@ -45,7 +45,7 @@ public class JsonComparer : CodeActivity
         JObject jsonObject1 = JObject.Parse(json1);
         JObject jsonObject2 = JObject.Parse(json2);
         
-        JToken? diff = GetJsonDifference(jsonObject1, jsonObject2);
+        JToken diff = GetJsonDifference(jsonObject1, jsonObject2);
         
         if(diff != null){
         return diff.ToString();
@@ -55,7 +55,7 @@ public class JsonComparer : CodeActivity
         }
     }
     
-    public static JToken? GetJsonDifference(JToken? token1, JToken? token2)
+    public static JToken GetJsonDifference(JToken token1, JToken token2)
     {
 
         //check if either token is null then return
@@ -69,13 +69,13 @@ public class JsonComparer : CodeActivity
             return null;
         }
         
-        //if type of Json token is different return second token
+        //if type of Json token is different return both values as strings
         if (token1.Type != token2.Type)
         {
             return token1.ToString() + ", " + token2.ToString();
         }
         
-        //check if tokens are both basic values, and then compare values and return value if different else return null
+        //check if tokens are both basic values, and then compare values and return values as comma separated string if different else return null
         if (token1 is JValue value1 && token2 is JValue value2)
         {
             return !JToken.DeepEquals(value1, value2) ? value1.ToString() + ", " + value2.ToString() : null;
@@ -88,13 +88,11 @@ public class JsonComparer : CodeActivity
             
             for (int i = 0; i < Math.Max(array1.Count, array2.Count); i++)
             {
-                JToken? diff = GetJsonDifference(i < array1.Count ? array1[i] : null, i < array2.Count ? array2[i] : null);
+                JToken diff = GetJsonDifference(i < array1.Count ? array1[i] : null, i < array2.Count ? array2[i] : null);
                 if (diff != null)
                 {
-                    Console.WriteLine("diff is" + diff);
-                     Console.WriteLine("diffArray before is" + diffArray);
+                    
                     diffArray.Add(diff);
-                   // Console.WriteLine("diffArray is" + diffArray);
                 }
             }
             
@@ -110,7 +108,7 @@ public class JsonComparer : CodeActivity
             
             foreach (var property in properties)
             {
-                JToken? diff = GetJsonDifference(obj1[property.Name], property.Value);
+                JToken diff = GetJsonDifference(obj1[property.Name], property.Value);
                 if (diff != null)
                 {
                     diffObj.Add(property.Name, diff);
@@ -131,34 +129,31 @@ public class JsonComparer : CodeActivity
                 var value = property.Value;
 
                 // if value is a Json string itself then add the Leafs of those values to the returnObj
-                if(value is JObject jobjInner){
-                    // Console.WriteLine("Getting inner of " + jobjInner);
+                if(value is JObject jobjInner){;
                     JObject LeafObj = GetLeafs(jobjInner);
                     foreach(var innerproperty in LeafObj.Properties()){
-                        // Console.WriteLine("Adding " + innerproperty.Name + ": " + innerproperty.Value);
                         RetObj.Add(innerproperty.Name,innerproperty.Value); 
                     }
-                    // Console.WriteLine("LeafObj is " + LeafObj);
-                    // Console.WriteLine("RetObj is " + RetObj);
                 }
                 // if value is a JValue aka a leaf then add it to returnObj
                 if(value is JValue){
-                    // Console.WriteLine("Adding base leaf " + property.Name + ":" + value);
                     RetObj.Add(property.Name,value); 
                 }
+                //if value is an array then loop through array and get leafs of each element and add their values to returnObj
                 if (value is JArray){
                     foreach(var item in value){
                         if(item is JObject innerJObject){
                             JObject LeafObj = GetLeafs(innerJObject);
                             foreach(var innerproperty in LeafObj.Properties()){
-                             Console.WriteLine("Adding array inner value " + innerproperty.Name + ": " + innerproperty.Value);
                              if(RetObj[innerproperty.Name] == null){
                                 RetObj.Add(innerproperty.Name,innerproperty.Value); 
                                 }
                             }
                         }
                         if(item is JValue){
-                            RetObj.Add(property.Name,value);
+                            if(RetObj[property.Name] == null){
+                                RetObj.Add(property.Name,value);
+                            }
                         }
                     }
 

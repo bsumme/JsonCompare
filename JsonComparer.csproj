@@ -2,33 +2,22 @@
   <PropertyGroup>
     <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Activities" />
     <Reference Include="System.Activities.Core.Presentation" />
     <Reference Include="System.Activities.Presentation" />
     <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3"></PackageReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
     <PackageReference Include="System.ComponentModel.Composition" Version="7.0.0"> </PackageReference>
+    <Reference Include="Microsoft.Activities.Extensions" />
     <PackageReference Include="UiPath.Workflow" Version="6.0.0-alpha-20220106-04"> </PackageReference>
     <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-alpha-20220106-04"> </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3"></PackageReference>
-    <PackageReference Include="Microsoft.Activities.Extensions" Version="2.0.6.9"></PackageReference>
   </ItemGroup>
 </Project>
