@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jKCdkKUR50Vy1Y2T4ac8ICvJVaih5kcFhmQssjaUDZZMA9j/EglpVEvq9eePYk5dJB1QEQ+M70tuQ1zGPiG7DA==",
+  "dgSpecHash": "GHh/CLZH37fIdQZltDBrlzfDkyYuPm465dm9bquuy+pBMy64kqzrItztt/HxKHKsqQW7jSir8NOKmt86VSdwBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bsumm\\Documents\\JsonComparer\\JsonComparer\\JsonComparer.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,8 @@
     "C:\\Users\\bsumm\\.nuget\\packages\\uipath.workflow.runtime\\6.0.0-alpha-20220106-04\\uipath.workflow.runtime.6.0.0-alpha-20220106-04.nupkg.sha512",
     "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
     "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
-    "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512"
+    "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
   ],
   "logs": []
 }
