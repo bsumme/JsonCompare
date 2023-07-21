@@ -11,3 +11,7 @@ C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer
 C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\JsonComparer.exe.config
 C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\JsonComparer.exe
 C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.exe
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\System.Net.Http.Formatting.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\bin\Debug\net461\System.Web.Http.dll
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.csproj.SuggestedBindingRedirects.cache
+C:\Users\bsumm\Documents\JsonComparer\JsonComparer\obj\Debug\net461\JsonComparer.exe.config

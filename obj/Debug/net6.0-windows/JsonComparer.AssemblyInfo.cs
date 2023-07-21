@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JsonComparer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfae8c427a2054ea638cd60115a8aac9ea6a64cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b51f13ccaded8947fa82747f25d94197ded980f")]
 [assembly: System.Reflection.AssemblyProductAttribute("JsonComparer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JsonComparer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

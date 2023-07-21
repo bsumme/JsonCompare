@@ -13,6 +13,7 @@
     <Reference Include="System.Activities.Presentation" />
     <Reference Include="System.ComponentModel.Composition" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3"></PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9"/>
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
     <PackageReference Include="System.ComponentModel.Composition" Version="7.0.0"> </PackageReference>

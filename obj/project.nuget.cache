@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GHh/CLZH37fIdQZltDBrlzfDkyYuPm465dm9bquuy+pBMy64kqzrItztt/HxKHKsqQW7jSir8NOKmt86VSdwBg==",
+  "dgSpecHash": "508D/1Ooc527H0letsxZui4fDSiYQKx8f8rBw6xc3heRpShWmNnKB02qgdfGdjD7UTsJzHHkSsqg0DPC4jB60g==",
   "success": true,
   "projectFilePath": "C:\\Users\\bsumm\\Documents\\JsonComparer\\JsonComparer\\JsonComparer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
+    "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",
     "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
     "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.1\\microsoft.codeanalysis.common.4.0.1.nupkg.sha512",
     "C:\\Users\\bsumm\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.1\\microsoft.codeanalysis.csharp.4.0.1.nupkg.sha512",
