@@ -16,7 +16,6 @@
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
     <PackageReference Include="System.ComponentModel.Composition" Version="7.0.0"> </PackageReference>
-    <Reference Include="Microsoft.Activities.Extensions" />
     <PackageReference Include="UiPath.Workflow" Version="6.0.0-alpha-20220106-04"> </PackageReference>
     <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-alpha-20220106-04"> </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3"></PackageReference>
